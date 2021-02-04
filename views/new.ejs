@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>New Message</h1>
+    <form action="/new" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <br />
+        <input id="name" placeholder="Enter your name" name="name" required />
+      </div>
+      <br />
+      <div>
+        <label for="text">Message</label>
+        <br />
+        <textarea
+          id="text"
+          placeholder="Enter your message"
+          name="text"
+          required
+        ></textarea>
+      </div>
+      <button>Submit</button>
+    </form>
+    <a href="/">Cancel</a>
+  </body>
+</html>
